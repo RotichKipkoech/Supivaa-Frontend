@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Building2, Key, Target } from "lucide-react";
-import CTASection from "@/components/CTASection";
+import WhatWeDoCTA from "@/components/WhatWeDoCTA";
 
 const WhatWeDo = () => {
   const services = [
@@ -210,7 +210,7 @@ const WhatWeDo = () => {
           </div>
         </section>
 
-        <CTASection />
+        <WhatWeDoCTA />
       </main>
       <Footer />
     </div>
