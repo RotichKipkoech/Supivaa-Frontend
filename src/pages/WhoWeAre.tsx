@@ -2,7 +2,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Target, Eye, Lightbulb, Users } from "lucide-react";
-import CTASection from "@/components/CTASection";
+import WhoWeAreHero from "@/components/WhoWeAreHero";
+import WhoWeAreCTA from "@/components/WhoWeAreCTA";
 
 const WhoWeAre = () => {
   const teamMembers = [
@@ -70,22 +71,7 @@ const WhoWeAre = () => {
     <div className="min-h-screen">
       <Navigation />
       <main>
-        {/* Hero Section */}
-        <section className="pt-32 pb-16 bg-warm-beige/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-                Supivaa
-              </h1>
-              <p className="text-lg text-muted-foreground">
-                Supivaa equips Fund Managers and climate finance ventures for impact delivery with actionable, gender-responsive frameworks and programs.
-              </p>
-              <p className="text-lg text-muted-foreground mt-4">
-                We specialize in fund management, investment readiness, and capacity building for Africa's climate and social enterprises. With rigorous due diligence, we connect ventures with investors ready to deploy capital aligned with SDG and Paris Agreement goals.
-              </p>
-            </div>
-          </div>
-        </section>
+        <WhoWeAreHero />
 
         {/* Our Story Section */}
         <section className="py-20 bg-background">
@@ -242,7 +228,7 @@ const WhoWeAre = () => {
           </div>
         </section>
 
-        <CTASection />
+        <WhoWeAreCTA />
       </main>
       <Footer />
     </div>
