@@ -1,5 +1,5 @@
 import { Linkedin, Youtube, Instagram, MapPin, Mail } from "lucide-react";
-import Logo from "./Logo";
+import logoFooter from "@/assets/logo-footer.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,7 +12,7 @@ const Footer = () => {
             {/* Logo and Description */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Logo className="w-12 h-12" />
+                <img src={logoFooter} alt="Supivaa Logo" className="w-12 h-12 object-contain" />
                 <div className="flex flex-col">
                   <span className="text-lg font-serif font-bold text-white leading-none">Supivaa</span>
                   <span className="text-xs text-white/60 leading-none">Advisory Group Ltd</span>
