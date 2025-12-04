@@ -1,13 +1,17 @@
-import Logo from "./Logo";
+import logoNavbar from "@/assets/logo-navbar.png";
 
 const WhoWeAreHero = () => {
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-br from-warm-beige/40 via-background to-primary/10">
+    <section className="pt-32 pb-20 bg-gradient-to-r from-warm-beige/30 via-cream to-[hsl(20,40%,92%)]">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Left side - Large Logo */}
           <div className="flex flex-col items-center md:items-start">
-            <Logo className="w-48 h-48 md:w-64 md:h-64 opacity-30" />
+            <img 
+              src={logoNavbar} 
+              alt="Supivaa Logo" 
+              className="w-48 h-auto md:w-64 opacity-40"
+            />
             <div className="mt-4 text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
                 Supivaa
